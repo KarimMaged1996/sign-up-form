@@ -47,11 +47,17 @@
                     </div>
                     <div class="mini-container">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <div class="info">password must be at least 8 Characters
+                            include a number, an UpperCase Letter & a 
+                            lowerCase Letter.
+                        </div>
                     </div>
-                    <div class="mini-container">
+                    <div class="mini-container" >
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm" id="confirm">
+                        <input type="password" name="confirm" id="confirm"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                     </div>
                 </div>
            </div>
